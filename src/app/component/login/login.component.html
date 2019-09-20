@@ -1,0 +1,22 @@
+<section class="login-section">
+        <div class="login-container">
+               
+            <div class="login">
+              <div class="login-triangle"></div>
+            <p [class.normal]="true" *ngIf="normal">{{message}}</p>
+            <p [class.vert]="true" *ngIf="succes">{{message}}</p>
+            <p [class.red]="true" *ngIf="error">{{message}}</p>
+              <h2 class="login-header">Log in</h2>
+            
+              <form class="login-container"  >
+                <p><input required type="login" #login  placeholder="login" ></p>
+                <p><input required type="password" #password placeholder="password" ></p>
+                <p><button class="button-seconnecter" (click)="seConnecter(login.value,password.value)"  type="submit">SE CONNECTER</button>
+                </p>
+              </form>
+            </div>
+
+        </div> 
+      </section>
+
+      
