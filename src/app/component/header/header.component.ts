@@ -7,16 +7,22 @@ import { LoginService } from "src/app/services/login.service";
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  constructor(public logins: LoginService) {
+  isLoggedIn: boolean;
+  constructor(public loginService: LoginService) {
 
-   }
+
+  }
 
   ngOnInit() {
-    
-
-
+    this.loginService.isLoggedInSubject.subscribe(
+      (isLoggedIn: boolean) => {
+        this.isLoggedIn = isLoggedIn;
+      }
+    )
   }
-  
-    
+
+  seDeconnecter() {
+    this.loginService.seDeconnecter();
   }
+}
 

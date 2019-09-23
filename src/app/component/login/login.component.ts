@@ -40,6 +40,8 @@ export class LoginComponent implements OnInit {
     this.loginService.seConnecter(user).subscribe(
       (data) => {
         console.log("user", user)
+        this.loginService.isLoggedIn = true;
+        this.loginService.emitEventLogged();
         this.router.navigateByUrl('/accueil-admin')
 
       },
