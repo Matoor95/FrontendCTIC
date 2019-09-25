@@ -8,9 +8,13 @@ import { ContactComponent } from './component/contact/contact.component';
 import { ProposerContenusComponent } from './component/proposer-contenus/proposer-contenus.component';
 import { AuthGuard } from './auth/auth.guard';
 import { AccueilAdminComponent } from './component/accueil-admin/accueil-admin.component';
+import { NouvelleEditionComponent } from './component/nouvelle-edition/nouvelle-edition.component';
+import { NouveauArticleComponent } from './component/nouveau-article/nouveau-article.component';
 
 const routes: Routes = [
   { path: "accueil", component: AccueilComponent },
+  { path: "nouvelle-edition", component: NouvelleEditionComponent },
+  { path: "nouveau-article", component: NouveauArticleComponent },
   { path: "edition", component: EditionComponent },
   { path: "archives", component: ArchivesComponent },
   { path: "proposer-contenus", component: ProposerContenusComponent },

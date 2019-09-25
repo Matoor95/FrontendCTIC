@@ -33,11 +33,15 @@ text-align : left;
 
 
 }
-.ins
+.entete
 {
-    text-decoration-color: #EE8D22;
-    text-decoration: underline;
-    text-decoration-style: 10px solid;
+    text-underline-position: under;
+    text-decoration-style: solid ;
+    padding : 0 0 1px 0;
+    border-bottom : 3px solid #EE8D22;
+    width:120px;
+    height:30px;
+    margin-left:130px;
 }
 .rectangle2{
 	width:400px;

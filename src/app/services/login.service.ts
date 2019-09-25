@@ -17,7 +17,7 @@ export class LoginService {
 
   seConnecter(user) {
     console.log("in service ", user)
-    return this.http.post(`${environment.BASE_API_URL}/login`, user);
+    return this.http.post(`${environment.BASE_API_URL}/login2`, user);
   }
 
   seDeconnecter(): void {
@@ -31,13 +31,6 @@ export class LoginService {
   }
 }
 
-
-/* service
-   login(login, password){
-    return this.http.post('/login',{login: login, password: password});
-  }
-}
-*/
 
 
 
