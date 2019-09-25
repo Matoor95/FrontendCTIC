@@ -8,12 +8,14 @@ import { ContactComponent } from './component/contact/contact.component';
 import { ProposerContenusComponent } from './component/proposer-contenus/proposer-contenus.component';
 import { AuthGuard } from './auth/auth.guard';
 import { AccueilAdminComponent } from './component/accueil-admin/accueil-admin.component';
+import { NouvelleEditionComponent } from './component/nouvelle-edition/nouvelle-edition.component';
 
 const routes: Routes = [
   { path: "accueil", component: AccueilComponent },
   { path: "edition", component: EditionComponent },
   { path: "archives", component: ArchivesComponent },
   { path: "proposer-contenus", component: ProposerContenusComponent },
+  { path: "nouvelle-edition", component: NouvelleEditionComponent },
   /*{
     path: "login",
     component: AccueilComponent,
@@ -22,7 +24,7 @@ const routes: Routes = [
   { path: "contact", component: ContactComponent },
   { path: "login", component: LoginComponent },
   { path: "", redirectTo: "/accueil", pathMatch: "full" },
-  { path : "accueil-admin", component: AccueilAdminComponent},
+  { path: "accueil-admin", component: AccueilAdminComponent },
   // { path: "**", component: PageNotFoundComponent }
 ];
 
