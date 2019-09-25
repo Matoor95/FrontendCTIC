@@ -18,6 +18,7 @@ const routes: Routes = [
   { path: "edition", component: EditionComponent },
   { path: "archives", component: ArchivesComponent },
   { path: "proposer-contenus", component: ProposerContenusComponent },
+  { path: "nouvelle-edition", component: NouvelleEditionComponent },
   /*{
     path: "login",
     component: AccueilComponent,
@@ -26,7 +27,7 @@ const routes: Routes = [
   { path: "contact", component: ContactComponent },
   { path: "login", component: LoginComponent },
   { path: "", redirectTo: "/accueil", pathMatch: "full" },
-  { path : "accueil-admin", component: AccueilAdminComponent},
+  { path: "accueil-admin", component: AccueilAdminComponent },
   // { path: "**", component: PageNotFoundComponent }
 ];
 
