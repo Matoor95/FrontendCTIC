@@ -1,44 +1,45 @@
-<<<<<<< HEAD
-=======
 <p>Ajouter une nouvelle edition mensulle</p>
 
 <div class="container">
     <form id="contact" action="" method="post">
         <fieldset>
             <legend>Date de l'edtion </legend>
-            <input placeholder="date" type="date" tabindex="1" required autofocus>
+            <input placeholder="Date" type="date" tabindex="1" #date required >
         </fieldset>
         <fieldset>
             <legend>Numero de l'edition</legend>
-            <input placeholder="Numb" type="number" tabindex="2" required>
+            <input placeholder="Numero" type="string" tabindex="2" #numero required>
         </fieldset>
         <p class="psection">Section 1 </p>
         <fieldset>
             <legend>Titre</legend>
-            <input placeholder="Titre" type="text" tabindex="2" required>
+            <input placeholder="Titre" type="string" tabindex="2" #titre required>
+        </fieldset>
+        
+        <fieldset>
+            <label>Description</label>
+            <input placeholder="Description" type="text" tabindex="3" #description required>
         </fieldset>
 
         <fieldset>
-            <legend>Telechargement</legend>
-            <label for="">Telechargement</label>
-            <input type="file">
+            <legend>Insérer images</legend>
+            <input type="file" accept="image/*" #file (change)="changeFile(file.files)">
         </fieldset>
         <fieldset>
-            <label for="">Description</label>
-            <input placeholder="" type="text" tabindex="3" required>
-        </fieldset>
-
-        <fieldset>
-            <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+            <button (click)="ajouterSection(titre.value,description.value)" name="submit" type="submit" id="contact-submit" data-submit="...Sending" >
+                    
+                Ajouter section
+            </button>
         </fieldset>
         <fieldset>
-            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Ajouter section</button>
-        </fieldset>
-        <fieldset>
-            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Emregistrer</button>
+            <button (click)="ajouterEdition(date.value,numero.value)" name="submit" type="submit" id="contact-submit" data-submit="...Sending" >
+                    
+                                    Enregistrer</button>
         </fieldset>
     </form>
 
 
 </div>
->>>>>>> 2e0e8484acdb9caa61436046bba1628853a72194
+
+
+
