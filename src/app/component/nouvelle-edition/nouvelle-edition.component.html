@@ -1,22 +1,42 @@
+<<<<<<< HEAD
 <p>Ajouter une nouvelle edition mensulle</p>
+=======
+<p>Ajouter une nouvelle edition mensuelle</p>
+>>>>>>> 5765c7bdbd3d34f8d6ed15defb461539f6fcf3c0
 
 <div class="container">
+
     <form id="contact" action="" method="post">
         <fieldset>
+<<<<<<< HEAD
             <legend>Date de l'edtion </legend>
             <input placeholder="Date" type="date" tabindex="1" #date required >
+=======
+            <legend>Date de l'edition </legend>
+            <input placeholder="date" type="date" tabindex="1" required autofocus>
+>>>>>>> 5765c7bdbd3d34f8d6ed15defb461539f6fcf3c0
         </fieldset>
         <fieldset>
             <legend>Numero de l'edition</legend>
             <input placeholder="Numero" type="string" tabindex="2" #numero required>
         </fieldset>
-        <p class="psection">Section 1 </p>
+        <h2>Section</h2>
         <fieldset>
             <legend>Titre</legend>
+<<<<<<< HEAD
             <input placeholder="Titre" type="string" tabindex="2" #titre required>
+=======
+            <input placeholder="Titre" type="text" tabindex="2" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Inserer image</legend>
+            <input type="file" accept="image/*">
+>>>>>>> 5765c7bdbd3d34f8d6ed15defb461539f6fcf3c0
         </fieldset>
         
         <fieldset>
+<<<<<<< HEAD
             <label>Description</label>
             <input placeholder="Description" type="text" tabindex="3" #description required>
         </fieldset>
@@ -30,6 +50,19 @@
                     
                 Ajouter section
             </button>
+=======
+            <legend>Description</legend>
+            <input placeholder="" type="text" tabindex="3" placeholder="la desciption" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Votre message</legend>
+            <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+        </fieldset>
+        <fieldset>
+            <button name="submit" class="ajout" type="submit" data-submit="...Sending">Ajouter une
+                section +</button>
+>>>>>>> 5765c7bdbd3d34f8d6ed15defb461539f6fcf3c0
         </fieldset>
         <fieldset>
             <button (click)="ajouterEdition(date.value,numero.value)" name="submit" type="submit" id="contact-submit" data-submit="...Sending" >
@@ -39,7 +72,11 @@
     </form>
 
 
+<<<<<<< HEAD
 </div>
 
 
 
+=======
+</div>
+>>>>>>> 5765c7bdbd3d34f8d6ed15defb461539f6fcf3c0
