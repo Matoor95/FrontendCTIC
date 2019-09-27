@@ -46,7 +46,7 @@ export class LoginComponent implements OnInit {
 
       },
       (error) => {
-        alert('identifiants incorrectes ')
+        alert('identifiants incorrectes')
       }
     )
 
