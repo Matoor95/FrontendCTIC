@@ -11,6 +11,8 @@ import { AccueilAdminComponent } from './component/accueil-admin/accueil-admin.c
 import { NouvelleEditionComponent } from './component/nouvelle-edition/nouvelle-edition.component';
 import { NouveauArticleComponent } from './component/nouveau-article/nouveau-article.component';
 
+
+
 const routes: Routes = [
   { path: "accueil", component: AccueilComponent },
   { path: "nouvelle-edition", component: NouvelleEditionComponent },
@@ -33,6 +35,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
+
 })
 export class AppRoutingModule { }

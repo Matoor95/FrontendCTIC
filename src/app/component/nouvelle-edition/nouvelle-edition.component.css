@@ -1,9 +1,11 @@
  
  
  .container{
-	 margin-left: -63%;
-	max-width:400px;
+	 margin-left: -80%;
+	max-width:1000px;
+	margin-right: 0;
 	width:100%;
+	height: 100%;
 	margin-top: 80px;
     margin-bottom:20%;
  }
@@ -22,12 +24,21 @@ margin-bottom: 55px;
 	 
 	 margin-left: -20px;
  }
- button[type="submit"]{
-	 margin-top: 10%;
-	 float: right;
+ button[type="submit"]:{
+	 margin-top: 5%;
+	 position: absolute;
  }
  .edition-section{
    display: flex;
    
 
  }
+ .editor{
+	 width: max-content;
+ }
+ button[type="submit"]:hover {
+	background:#EE8D22;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}

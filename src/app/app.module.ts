@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MatButtonModule, MatCardModule, MatFormFieldModule } from '@angular/material';
 
+import { AngularEditorModule } from '@kolkov/angular-editor';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -43,6 +44,7 @@ import { RouterModule } from '@angular/router';
   imports: [
     BrowserModule,
     FormsModule,
+    AngularEditorModule,
     ReactiveFormsModule,
     MatButtonModule, MatCardModule, MatFormFieldModule,
     AppRoutingModule,

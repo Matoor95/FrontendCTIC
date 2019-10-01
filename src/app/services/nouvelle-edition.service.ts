@@ -17,4 +17,5 @@ export class NouvelleEditionService {
     console.log("in service ", edition.sections[0]);
     return this.http.post(`${environment.BASE_API_URL}/create`, edition);
   }
+
 }
