@@ -1,1 +1,5 @@
-<p>edition works!</p>
+<div class="form-group" *ngFor="let edition of editions">
+    <div class="date">{{edition.date}}</div>
+    <div class="number">{{edition.number}}</div>
+    <div class="jumbotron" [innerHTML]="edition.sections"></div>
+</div>

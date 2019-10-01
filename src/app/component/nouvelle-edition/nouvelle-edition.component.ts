@@ -86,14 +86,15 @@ export class NouvelleEditionComponent implements OnInit {
 
 
 
-  ajouterEdition(date, numero) {
-
+  ajouterEdition(date, numero, ) {
+    console.log(this.htmlContent);
     // const edition= { date, numero, section }
-    let edition = { numero: numero, date: date, sections: this.sections }
+    let edition = { numero: numero, date: date, sections: this.htmlContent}
 
     this.nouvelleEditionService.ajouterEdition(edition).subscribe(
       (data) => {
         console.log("tableau trouvé", edition.sections[0]);
+
 
         //this.router.navigateByUrl('/accueil-admin')
         alert(' Edition ajouté avec succes');

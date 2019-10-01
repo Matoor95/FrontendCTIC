@@ -18,4 +18,7 @@ export class NouvelleEditionService {
     return this.http.post(`${environment.BASE_API_URL}/create`, edition);
   }
 
+  listeEdition() {
+    return this.http.get(`${environment.BASE_API_URL}/liste`);
+  }
 }
