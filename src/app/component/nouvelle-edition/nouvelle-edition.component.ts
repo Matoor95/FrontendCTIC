@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NouvelleEditionService } from 'src/app/services/nouvelle-edition.service';
 import { Router } from '@angular/router';
 import { AngularEditorConfig } from '@kolkov/angular-editor';
+import { BootstrapDialog } from 'bootstrap3-dialog'
 import { from } from 'rxjs';
 @Component({
   selector: 'app-nouvelle-edition',
@@ -89,7 +90,7 @@ export class NouvelleEditionComponent implements OnInit {
   ajouterEdition(date, numero, ) {
     console.log(this.htmlContent);
     // const edition= { date, numero, section }
-    let edition = { numero: numero, date: date, sections: this.htmlContent}
+    let edition = { numero: numero, date: date, sections: this.htmlContent }
 
     this.nouvelleEditionService.ajouterEdition(edition).subscribe(
       (data) => {
@@ -97,7 +98,8 @@ export class NouvelleEditionComponent implements OnInit {
 
 
         //this.router.navigateByUrl('/accueil-admin')
-        alert(' Edition ajouté avec succes');
+        // alert(' Edition ajouté avec succes');
+        alert('Edition ajouter avec succes!');
 
 
       },

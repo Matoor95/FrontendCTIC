@@ -24,10 +24,13 @@ margin-bottom: 55px;
 	 
 	 margin-left: -20px;
  }
- button[type="submit"]:{
-	 margin-top: 5%;
+ button[type="submit"]
+ { margin-top: 5%;
 	 position: absolute;
- }
+}
+
+	
+ 
  .edition-section{
    display: flex;
    
@@ -38,7 +41,7 @@ margin-bottom: 55px;
  }
  button[type="submit"]:hover {
 	background:#EE8D22;
-	-webkit-transition:background 0.3s ease-in-out;
-	-moz-transition:background 0.3s ease-in-out;
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
 	transition:background-color 0.3s ease-in-out;
 }
